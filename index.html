@@ -32,14 +32,12 @@ header p{color:#cfd8dc}
   padding-left:15px;
 }
 
-/* ====== GRID FIJO A 2 POR FILA ====== */
 .grid{
   display:grid;
   grid-template-columns: repeat(2, 1fr);
   gap:25px;
 }
 
-/* En celular: 1 por fila */
 @media (max-width: 768px){
   .grid{
     grid-template-columns: 1fr;
@@ -52,7 +50,6 @@ header p{color:#cfd8dc}
   overflow:hidden;
   box-shadow:0 8px 20px rgba(0,0,0,.3);
   transition:.3s;
-  cursor:pointer;
 }
 
 .card:hover{
@@ -64,6 +61,7 @@ header p{color:#cfd8dc}
   width:100%;
   height:180px;
   object-fit:cover;
+  cursor:pointer;
 }
 
 .card-content{
@@ -135,37 +133,64 @@ footer{
 </header>
 
 <div class="container">
-<h2 class="section-title">Certificados</h2>
+  <h2 class="section-title">Certificados</h2>
 
-<div class="grid">
+  <div class="grid">
 
-<!-- CERTIFICADO 1 -->
-<div class="card">
-  <img src="oratoria.png" onclick="openModal(this.src)">
-  <div class="card-content">
-    <h3>Cómo hablar bien en público</h3>
-    <p>UAB · 2026</p>
-    <div class="buttons">
-      <a class="btn view" onclick="openModal('oratoria.png')">Ver</a>
-      <a class="btn download" href="oratoria.pdf" download>PDF</a>
+    <!-- CERTIFICADO 1 -->
+    <div class="card">
+      <img src="oratoria.png" onclick="openModal(this.src)">
+      <div class="card-content">
+        <h3>Cómo hablar bien en público</h3>
+        <p>UAB · 2026</p>
+        <div class="buttons">
+          <a class="btn view" onclick="openModal('oratoria.png')">Ver</a>
+          <a class="btn download" href="oratoria.pdf" download>PDF</a>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
-<!-- CERTIFICADO 2 -->
-<div class="card">
-  <img src="psicología.png" onclick="openModal(this.src)">
-  <div class="card-content">
-    <h3>Cognición, Pensamiento y Lenguaje</h3>
-    <p>Universidad de Palermo · 2026</p>
-    <div class="buttons">
-      <a class="btn view" onclick="openModal('psicología.png')">Ver</a>
-      <a class="btn download" href="psicología.pdf" download>PDF</a>
+    <!-- CERTIFICADO 2 -->
+    <div class="card">
+      <img src="psicología.png" onclick="openModal(this.src)">
+      <div class="card-content">
+        <h3>Cognición, Pensamiento y Lenguaje</h3>
+        <p>Universidad de Palermo · 2026</p>
+        <div class="buttons">
+          <a class="btn view" onclick="openModal('psicología.png')">Ver</a>
+          <a class="btn download" href="psicología.pdf" download>PDF</a>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
-</div>
+    <!-- CERTIFICADO 3 -->
+    <div class="card">
+      <img src="infancia.png" onclick="openModal(this.src)">
+      <div class="card-content">
+        <h3>Aprendizaje, primera infancia y desarrollo de habilidades</h3>
+        <p>Banco Interamericano de Desarrollo · 2026</p>
+        <div class="buttons">
+          <a class="btn view" onclick="openModal('infancia.png')">Ver</a>
+          <a class="btn download" href="Aprendixaje, primera infancia y desarrollo de habilidades - Allan Araúz.pdf" download>PDF</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- CERTIFICADO 4 -->
+    <div class="card">
+      <img src="insignia.png" onclick="openModal(this.src)">
+      <div class="card-content">
+        <h3>Aprendizaje, primera infancia y desarrollo de habilidades</h3>
+        <p>Insignia BID</p>
+        <p>BID · 2026</p>
+        <div class="buttons">
+          <a class="btn view" onclick="openModal('insignia.png')">Ver</a>
+          <a class="btn download" href="insignia.png" download>IMG</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </div>
 
 <!-- MODAL -->
